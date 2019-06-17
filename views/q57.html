@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+          <style type="text/css">
+        	.content{
+        		padding:90px 0;
+        		height: 220px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c15">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					Fedya has 4 red cubes, 3 blue cubes, 2 green cubes, and 1 yellow cube. He is building a tower (see the picture) in such a way that no two cubes touching each other have the same colour. What is the colour of the cube with the question mark?
+				</h1>
+				<img src="../images/a3/q15.png" style="height: 170px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">red
+				<input type="radio" name="txtChoose" value = "b">blue
+				<input type="radio" name="txtChoose" value = "c">green
+				<input type="radio" name="txtChoose" value = "d">yellow
+				<input type="radio" name="txtChoose" value = "e">impossible to determine 
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

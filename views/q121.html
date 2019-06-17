@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 150px 0;
+        		height: 100px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="f19">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>  Ann has a square sheet of paper: 
+				<img src="../images/KG2013/Q19_1.png" style="height: 150px">
+				 She cuts these pieces
+				 <img src="../images/KG2013/Q19_2.png" style="height: 150px">
+				  out of the sheet, as many as possible. How many pieces does she get?
+				</h1>	
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> 1
+				<input type="radio" name="txtChoose" value = "b"> 2
+				<input type="radio" name="txtChoose" value = "c"> 3
+				<input type="radio" name="txtChoose" value = "d"> 4
+				<input type="radio" name="txtChoose" value = "e"> 5
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>	
+</body>
+</html>

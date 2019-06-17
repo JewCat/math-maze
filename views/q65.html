@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c5">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					Eric had 10 equal metal strips.<br>
+					<img src="../images/a4/q5_1.png" style="width: 600px;height: 170px"><br>
+					He has screwed pairs of them together into five long strips<br>
+					<img src="../images/a4/q5_2.png" style="width: 600px;height: 170px"><br>Which strip is the shortest?
+
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">A
+				<input type="radio" name="txtChoose" value = "b">B
+				<input type="radio" name="txtChoose" value = "c">C
+				<input type="radio" name="txtChoose" value = "d">D
+				<input type="radio" name="txtChoose" value = "e">E
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

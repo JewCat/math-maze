@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+          <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c12">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					Six little elephants, A, B, C, D, E, F, are lining up to buy tickets. F is after A and before D and he is also between B and C; B is the first in the line; and E is the last in the line. Which elephant is F?
+				</h1>
+				<img src="../images/a3/q12.png" style="width: 80%;height: 150px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> the 2nd 
+				<input type="radio" name="txtChoose" value = "b"> the 3rd
+				<input type="radio" name="txtChoose" value = "c"> the 4th
+				<input type="radio" name="txtChoose" value = "d"> the 5th
+				<input type="radio" name="txtChoose" value = "e"> the 6th 
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

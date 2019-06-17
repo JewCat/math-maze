@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 60px 0;
+        		height: 280px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="g13">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					Walking from K to O along the lines pick up the letters KANGAROO in the correct order. What is the lenght of the shortest walk in meters?
+					<br>
+					<img src="../images/KG2014/Q13.png">
+				</h1>	
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> 16 m
+				<input type="radio" name="txtChoose" value = "b"> 17 m
+				<input type="radio" name="txtChoose" value = "c"> 18 m
+				<input type="radio" name="txtChoose" value = "d"> 19 m
+				<input type="radio" name="txtChoose" value = "e"> 20 m
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>	
+</body>
+</html>

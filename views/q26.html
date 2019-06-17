@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="b2">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>There are twelve books on a shelf and four children in a room. How many books will be left on the shelf if each child takes one book? </h1>
+				<img src="../images/a2/q2.png" style="width: 300px;height: 250px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">12
+				<input type="radio" name="txtChoose" value = "b">8
+				<input type="radio" name="txtChoose" value = "c">4
+				<input type="radio" name="txtChoose" value = "d">2
+				<input type="radio" name="txtChoose" value = "e">0
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

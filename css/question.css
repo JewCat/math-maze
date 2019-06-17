@@ -1,0 +1,79 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+#timezone{
+    color: red;
+    font-weight: bold;
+    margin: 10px auto;
+    font-size: 30px;
+    border: 3px outset white;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+
+}
+.question{
+    text-align: center;
+    background-image: url('../images/BGR/11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1280px;
+    height: 690px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+}
+
+img{
+    height: 300px;
+}
+.answer input{
+    margin-left: 30px;
+
+}
+.answer{
+    height: 105px;
+    line-height: 210px;
+    font-weight: bold;
+}
+.answer img{
+    height: 100px;
+
+}
+.content{
+    height: 400px;
+}
+
+.answer, input{
+	margin-left: 5px;
+	color: red;
+	font-size: 20px;
+}
+
+h1{
+    font-family: cursive;
+    color:green;
+    text-align: center;
+}
+
+
+.send{
+    font-family: cursive;
+    border: 5px outset #E41E26;
+    margin: 50px auto;
+    margin-bottom: 0;
+    width: 160px;
+    text-align: center;
+    background-color: #E41E26;
+    color: white;
+    font-size: 25px;
+}
+.send:hover{
+    font-weight: bold;
+    background-color: #D31114;
+    border: 5px inset #D31114;
+}
+

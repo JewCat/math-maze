@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="g9">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					When the ant 
+					<img src="../images/KG2014/Q9_1.png" style="height: 50px">
+					goes from home 
+					<img src="../images/KG2014/Q9_2.png" style="height: 50px">
+					following these arrows: → 3,↑ 3,→ 3,↑ 1
+					 it comes to the ladybird<img src="../images/KG2014/Q9_3.png" style="height: 50px"><br>
+					<img src="../images/KG2014/Q9_4.png" style="height: 240px"><br>
+					Which animal would it come to, if it goes from home following these arrows: → 2, ↓ 2, → 3, ↑ 3, → 2, ↑ 2?
+				</h1>	
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> <img src="../images/KG2014/Q9A1.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "b"> <img src="../images/KG2014/Q9A2.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "c"> <img src="../images/KG2014/Q9A3.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "d"> <img src="../images/KG2014/Q9A4.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "e"> <img src="../images/KG2014/Q9A5.png" style="height: 50px">
+                        </div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>	
+</body>
+</html>

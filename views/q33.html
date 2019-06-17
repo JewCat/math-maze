@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="b9">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>Cat and Mouse are moving to the right. When Mouse jumps 1 tile, Cat jumps 2 tiles at the same time.On which tile does Cat catch Mouse?  
+				</h1>
+				<img src="../images/a2/q9.png" style="width: 80%;height: 100px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">1
+				<input type="radio" name="txtChoose" value = "b">2
+				<input type="radio" name="txtChoose" value = "c">3
+				<input type="radio" name="txtChoose" value = "d">4
+				<input type="radio" name="txtChoose" value = "e">5
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

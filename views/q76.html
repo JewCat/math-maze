@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 100px 0;
+        		height: 200px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c16">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+
+			<div class="content">
+				<h1>
+					Place each of the numbers 1, 2, 3, 4, 5 into one box so that everything is correct. Which number goes into the box marked with question mark?
+				</h1>
+				<img src="../images/a4/q16.png">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">1
+				<input type="radio" name="txtChoose" value = "b">2
+				<input type="radio" name="txtChoose" value = "c">3
+				<input type="radio" name="txtChoose" value = "d">4
+				<input type="radio" name="txtChoose" value = "e">5
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

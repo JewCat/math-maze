@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 100px 0;
+        		height: 200px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="f6">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>There is a path with square tiles. How many tiles ﬁt in the area inside?</h1>
+				<img src="../images/KG2013/Q6.png">
+				
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">5
+				<input type="radio" name="txtChoose" value = "b">6
+				<input type="radio" name="txtChoose" value = "c">7
+				<input type="radio" name="txtChoose" value = "d">8
+				<input type="radio" name="txtChoose" value = "e">9
+                        </div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

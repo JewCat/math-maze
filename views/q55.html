@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+          <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c13">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					A square was cut into four parts as shown in the picture.<img src="../images/a3/q13.png" style="width: 200px;height: 150px;">Which of the following shapes cannot be made with these 4 parts? 
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"><img src="../images/a3/q13a1.png">
+				<input type="radio" name="txtChoose" value = "b"><img src="../images/a3/q13a2.png">
+				<input type="radio" name="txtChoose" value = "c"><img src="../images/a3/q13a3.png">
+				<input type="radio" name="txtChoose" value = "d"><img src="../images/a3/q13a4.png">
+				<input type="radio" name="txtChoose" value = "e"><img src="../images/a3/q13a5.png">
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c23">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					We left for a summer camp yesterday at 4:32 PM and got to our destination today at 6:11 AM. For how long did we travel?
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">13 hours 39 minutes
+				<input type="radio" name="txtChoose" value = "b">14 hours 39 minutes
+				<input type="radio" name="txtChoose" value = "c">14 hours 21 minutes
+				<input type="radio" name="txtChoose" value = "d">13 hours 21 minutes
+				<input type="radio" name="txtChoose" value = "e">2 hours 21 minutes
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

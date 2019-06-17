@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 50px 0;
+        		height: 300px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="a16">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>Tim is looking at seven silk paintings on a wall. At the left he sees the dragon and on the right the butterfly.
+				<img src="../images/a1/q16.png" style="width: 90%;height: 140px"><br>Which animal is on the left of the tiger and the lion, and on the right of the apricot?</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"><img src="../images/a1/q16a1.png">
+				<input type="radio" name="txtChoose" value = "b"><img src="../images/a1/q16a2.png">
+				<input type="radio" name="txtChoose" value = "c"><img src="../images/a1/q16a3.png">
+				<input type="radio" name="txtChoose" value = "d"><img src="../images/a1/q16a4.png">
+				<input type="radio" name="txtChoose" value = "e"><img src="../images/a1/q16a5.png">
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="f3">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1> Which of the dresses has less than 7 dots, but more than 5 dots?  </h1>
+				
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"><img src="../images/KG2013/Q3A1.png">
+				<input type="radio" name="txtChoose" value = "b"><img src="../images/KG2013/Q3A2.png">
+				<input type="radio" name="txtChoose" value = "c"><img src="../images/KG2013/Q3A3.png">
+				<input type="radio" name="txtChoose" value = "d"><img src="../images/KG2013/Q3A4.png">
+				<input type="radio" name="txtChoose" value = "e"><img src="../images/KG2013/Q3A5.png">
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

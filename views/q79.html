@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c19">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					A ship was attacked by pirates. One by one they were climbing a rope to get to the ship. The pirate captain was in the middle and he was also the eighth one from the beginning. How many pirates were on the rope?
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">7
+				<input type="radio" name="txtChoose" value = "b">8
+				<input type="radio" name="txtChoose" value = "c">12
+				<input type="radio" name="txtChoose" value = "d">15
+				<input type="radio" name="txtChoose" value = "e">16
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

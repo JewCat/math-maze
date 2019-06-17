@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="g14">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					How many numbers are greater than 10 and less than or equal to 31 which can bewritten with digits 1, 2 or 3 only? You can repeat digits.
+				</h1>	
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> 2
+				<input type="radio" name="txtChoose" value = "b"> 4
+				<input type="radio" name="txtChoose" value = "c"> 6
+				<input type="radio" name="txtChoose" value = "d"> 7
+				<input type="radio" name="txtChoose" value = "e"> 8
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>	
+</body>
+</html>

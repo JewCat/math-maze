@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="b15">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>In a game it is possible to make the following exchanges:<img src="../images/a2/q15.png"><br>Adam has 6 pears. How many strawberries will Adam have, when he trades all his pears for just strawberries? 
+				</h1>
+				
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">12
+				<input type="radio" name="txtChoose" value = "b">36
+				<input type="radio" name="txtChoose" value = "c">18
+				<input type="radio" name="txtChoose" value = "d">24
+				<input type="radio" name="txtChoose" value = "e">6
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

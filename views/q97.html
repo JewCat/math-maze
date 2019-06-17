@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 100px 0;
+        		height: 200px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="e13">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					Amy wants to build a larger square from small square tiles. She already glued six tiles as shown. At least how many more tiles does she need?
+				</h1>
+				<img src="../images/a5/q13.png" style="height: 230px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">6
+				<input type="radio" name="txtChoose" value = "b">8
+				<input type="radio" name="txtChoose" value = "c">9
+				<input type="radio" name="txtChoose" value = "d">10
+				<input type="radio" name="txtChoose" value = "e">12
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

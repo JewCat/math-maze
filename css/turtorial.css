@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin: auto;
+    width: 1280px;
+    height: 690px;
+    position: relative;
+}
+.background{
+    margin: auto;
+    width: 1280px;
+    height: 690px;
+    background-image: url('../images/turtorial/background.jpg');
+}
+.content_container{
+    position: absolute;
+    z-index: 10;
+    opacity: 0.9;
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    left: 140px;
+    top: 50px;
+    border-radius: 25px;
+}
+.content{
+    position: absolute;
+    left: 140px;
+    top: 50px;
+    z-index: 100;
+    width: 1000px;
+    height: 600px;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+#back_to_menu{
+    position: absolute;
+    left: 880px;
+    top: 550px;
+    z-index: 100;
+    width: 160px;
+    height: 50px;
+    border: 5px outset #E41E26;
+    text-align: center;
+    background-color: #E41E26;
+    color: white;
+    font-size: 25px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+#back_to_menu:hover{
+    font-weight: bold;
+    background-color: #D31114;
+    border: 5px inset #D31114;
+}

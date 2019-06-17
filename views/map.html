@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Maze</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+        <!-- Css -->
+        <link rel='stylesheet' type='text/css' href='../css/map.css'/>
+        <!-- Js -->
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+    </head>
+    <body onload="loadingMap()">
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <img id="logo_img" src="../images/map/logo.png">
+                </div>
+                <div id="status">
+                    <div class="hp">
+                        <img id="hp_img" src="../images/map/hp.png">
+                    </div>
+                    <div id="hp1" class="hp"></div>
+                    <div id="hp2" class="hp"></div>
+                    <div id="hp3" class="hp"></div>
+                </div>
+                <div id="timezone">
+                    <span id="m"></span> :
+                    <span id="s"></span>
+                </div>
+                <div id="process">0/10</div>
+                <div id="back_to_menu" onclick="backToMenu()">Back to Menu</div>
+            </div>
+            <div class="right">
+                <div id="a1" class="box" onclick="execAction(263, 1)"></div>
+                <div id="a2" class="box" onclick="execAction(365, 1)"></div>
+                <div id="a3" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="a4" class="box" onclick="execAction(569, 1, this.id)">
+                    <img class="enemies" src="../images/objects/e1.png">
+                </div>
+                <div id="a5" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="a6" class="box" onclick="execAction(773, 1, this.id)">
+                    <img class="enemies" src="../images/objects/e2.png">
+                </div>
+                <div id="a7" class="box" onclick="execAction(875, 1)"></div>
+                <div id="a8" class="box" onclick="execAction(977, 1)"></div>
+                <div id="a9" class="box" onclick="execAction(1079, 1)"></div>
+                <div id="a10" class="box" onclick="execAction(1181, 1)"></div>
+
+                <div id="b1" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="b2" class="box" onclick="execAction(365, 103, this.id)">
+                    <img class="enemies" src="../images/objects/e3.png">
+                </div>
+                <div id="b3" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="b4" class="box" onclick="execAction(569, 103)"></div>
+                <div id="b5" class="box" onclick="execAction(671, 103)"></div>
+                <div id="b6" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="b7" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="b8" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="b9" class="box" onclick="execAction(1079, 103, this.id)">
+                    <img class="enemies" src="../images/objects/e4.png">
+                </div>
+                <div id="b10" class="box" onclick="execAction(1181, 103)"></div>
+
+                <div id="c1" class="box" onclick="execAction(263, 205)"></div>
+                <div id="c2" class="box" onclick="execAction(365, 205)"></div>
+                <div id="c3" class="box" onclick="execAction(467, 205)"></div>
+                <div id="c4" class="box" onclick="execAction(569, 205, this.id)">
+                    <img class="enemies" src="../images/objects/e5.png">
+                </div>
+                <div id="c5" class="box" onclick="execAction(671, 205)"></div>
+                <div id="c6" class="box" onclick="execAction(773, 205)"></div>
+                <div id="c7" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="c8" class="box" onclick="execAction(977, 205)"></div>
+                <div id="c9" class="box" onclick="execAction(1079, 205)"></div>
+                <div id="c10" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+
+                <div id="d1" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="d2" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="d3" class="box" onclick="execAction(467, 307)"></div>
+                <div id="d4" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="d5" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="d6" class="box" onclick="execAction(773, 307, this.id)">
+                    <img class="enemies" src="../images/objects/e6.png">
+                </div>
+                <div id="d7" class="box" onclick="execAction(875, 307)"></div>
+                <div id="d8" class="box" onclick="execAction(977, 307, this.id)">
+                    <img class="enemies" src="../images/objects/e7.png">
+                </div>
+                <div id="d9" class="box" onclick="execAction(1079, 307)"></div>
+                <div id="d10" class="box" onclick="execAction(1181, 307)"></div>
+
+                <div id="e1" class="box" onclick="execAction(263, 409)"></div>
+                <div id="e2" class="box" onclick="execAction(365, 409)"></div>
+                <div id="e3" class="box" onclick="execAction(467, 409)"></div>
+                <div id="e4" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="e5" class="box" onclick="execAction(671, 409, this.id)">
+                    <img class="enemies" src="../images/objects/e8.png">
+                </div>
+                <div id="e6" class="box" onclick="execAction(773, 409)"></div>
+                <div id="e7" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="e8" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="e9" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="e10" class="box" onclick="execAction(1181, 409)"></div>
+
+                <div id="f1" class="box" onclick="execAction(263, 511)"></div>
+                <div id="f2" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="f3" class="box" onclick="execAction(467, 511, this.id)">
+                    <img class="enemies" src="../images/objects/e9.png">
+                </div>
+                <div id="f4" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="f5" class="box" onclick="execAction(671, 511)"></div>
+                <div id="f6" class="box" onclick="execAction(773, 511)"></div>
+                <div id="f7" class="box" onclick="execAction(875, 511)"></div>
+                <div id="f8" class="box" >
+                    <img class="rocks" src="../images/map/rock.png">
+                </div>
+                <div id="f9" class="box" onclick="execAction(1079, 511, this.id)">
+                    <img class="enemies" src="../images/objects/e10.png">
+                </div>
+                <div id="f10" class="box" onclick="execAction(1181, 511)"></div>
+            </div>
+            <div id="character">
+                <img id="char_img" src="../images/objects/char.png">
+            </div>
+        </div>
+    </body>
+</html>

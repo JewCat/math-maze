@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+      
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="b11">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>There is a house on each corner of the streets. The houses are shown on the map. Two new houses will be built on each street between the corner houses. How many houses will there be in all? </h1>
+				<img src="../images/a2/q11.png" style="width: 360px;height: 180px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">8
+				<input type="radio" name="txtChoose" value = "b">12
+				<input type="radio" name="txtChoose" value = "c">16
+				<input type="radio" name="txtChoose" value = "d">20
+				<input type="radio" name="txtChoose" value = "e">Other answer
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

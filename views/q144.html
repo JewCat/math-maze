@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 150px 0;
+        		height: 100px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="g19">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					What should you put in the square to get a correct diagram?<br>
+					<img src="../images/KG2014/Q19.png" style="height: 200px">
+				</h1>	
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> -38
+				<input type="radio" name="txtChoose" value = "b"> :8
+				<input type="radio" name="txtChoose" value = "c"> -45
+				<input type="radio" name="txtChoose" value = "d"> .6
+				<input type="radio" name="txtChoose" value = "e"> :6
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 100px 0;
+        		height: 200px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="g2">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>  
+					  In what order do you meet the shapes starting from the arrow?
+				</h1>	
+				<img src="../images/KG2014/Q2.png" style="height: 250px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> <img src="../images/KG2014/Q2A1.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "b"> <img src="../images/KG2014/Q2A2.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "c"> <img src="../images/KG2014/Q2A3.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "d"> <img src="../images/KG2014/Q2A4.png" style="height: 50px">
+				<input type="radio" name="txtChoose" value = "e"> <img src="../images/KG2014/Q2A5.png" style="height: 50px">
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>	
+</body>
+</html>

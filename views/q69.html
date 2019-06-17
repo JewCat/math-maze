@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c9">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					 It takes half an hour for Jenny to go half of the way from school to home. How long does it take Jenny to go to school from home?
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">15 minutes
+				<input type="radio" name="txtChoose" value = "b"> half an hour
+				<input type="radio" name="txtChoose" value = "c"> 1 hour
+				<input type="radio" name="txtChoose" value = "d"> 2 hours
+				<input type="radio" name="txtChoose" value = "e"> 40 minutes
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

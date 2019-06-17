@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="b16">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+
+			<div class="content">
+				<h1>Sophie makes a row of 10 houses with matchsticks. In the picture you can see the beginning of the row. How many matchsticks does Sophie need altogether? 
+				</h1>
+				<img src="../images/a2/q16.png" style="width: 55%;height: 240px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">50
+				<input type="radio" name="txtChoose" value = "b">51
+				<input type="radio" name="txtChoose" value = "c">55
+				<input type="radio" name="txtChoose" value = "d">60
+				<input type="radio" name="txtChoose" value = "e">62
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

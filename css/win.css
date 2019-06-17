@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#content{
+    margin: 0 auto;
+    width: 1280px;
+    height: 690px;
+    background-image: url('../images/BGR/win.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFCCFF;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+#cgr img{
+    width: 1260px;
+    height: 600px;
+}
+
+#back_to_menu{
+    margin-right: 30px;
+    float: right;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    border: 5px outset #E41E26;
+    border-radius: 10px;
+    background-color: #E41E26;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#back_to_menu:hover{
+    font-weight: bold;
+    background-color: #D31114;
+    border: 5px inset #D31114;
+}
+
+#scores{
+    margin-top:-160px;
+    margin-left: 520px;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+}
+
+#scores strong{
+    color: #008800;
+    text-decoration: underline;
+}

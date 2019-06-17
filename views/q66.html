@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+          <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c6">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					Which of the following pictures can be rotated so that it will coincide with the picture shown on the right?<br> <img src="../images/a4/q6.png" style="width: 170px;height: 140px">
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"><img src="../images/a4/q6a1.png">
+				<input type="radio" name="txtChoose" value = "b"><img src="../images/a4/q6a2.png">
+				<input type="radio" name="txtChoose" value = "c"><img src="../images/a4/q6a3.png">
+				<input type="radio" name="txtChoose" value = "d"><img src="../images/a4/q6a4.png">
+				<input type="radio" name="txtChoose" value = "e"><img src="../images/a4/q6a5.png">
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

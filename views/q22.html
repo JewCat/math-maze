@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="a22">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+
+			<div class="content">
+				<h1>Ann has a lot of these tiles:<img src="../images/a1/q22_1.png" style="width: 90px;height: 90px"><br> How many of the following shapes can Ann make by glueing together two of these tiles?</h1><br>
+
+				<img src="../images/a1/q22_2.png" style="width: 600px;height: 150px">
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">0
+				<input type="radio" name="txtChoose" value = "b">1
+				<input type="radio" name="txtChoose" value = "c">2
+				<input type="radio" name="txtChoose" value = "d">3
+				<input type="radio" name="txtChoose" value = "e">4
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="c10">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>
+					My rabbit eats only cabbage and carrots. Last week he ate either 10 carrots or 2 heads of cabbage each day. If he ate a total of 6 heads of cabbage last week, how many carrots did he eat?
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">20
+				<input type="radio" name="txtChoose" value = "b">30
+				<input type="radio" name="txtChoose" value = "c">34
+				<input type="radio" name="txtChoose" value = "d">40
+				<input type="radio" name="txtChoose" value = "e">50
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin: auto;
+    width: 1284px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    border: 2px inset black;
+    position: relative;
+}
+
+/* LEFT */
+.left{
+    width: 260px;
+    height: 612px;
+    border: 1px inset black;
+    display: inline-block;
+    background-image: url('../images/map/display_table.jpg');
+}
+.logo{
+    margin-top: 10px;
+    text-align: center;
+}
+#logo_img{
+    width: 250px;
+}
+#status{
+    border: 3px outset white;
+    margin: 20px auto;
+    width: 200px;
+    height: 30px;
+}
+#status:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.hp{
+    float: left;
+    border: 1px inset white;
+    width: 48px;
+    height: 28px;
+    background-color: #0C8300;
+}
+.hp:first-child{
+    background-color: #CACACA;
+    text-align: center;
+}
+#hp_img{
+    height: 27px;
+}
+#timezone{
+    color: white;
+    font-weight: bold;
+    margin: 30px auto;
+    font-size: 30px;
+    border: 3px outset white;
+    width: 150px;
+    padding: 10px ;
+    text-align: center;
+}
+#process{
+    border: 3px outset white;
+    margin: 40px auto 20px;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+#back_to_menu{
+    border: 5px outset #E41E26;
+    margin: 200px auto;
+    width: 160px;
+    text-align: center;
+    background-color: #E41E26;
+    color: white;
+    font-size: 25px;
+}
+#back_to_menu:hover{
+    font-weight: bold;
+    background-color: #D31114;
+    border: 5px inset #D31114;
+}
+
+
+/* RIGHT */
+.right{
+    width: 1020px;
+    display: inline-block;
+    border: 1px solid white;
+    position: absolute;
+    background-image: url('../images/map/map_background.jpg');
+}
+.right::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid white;
+    position: relative;
+}
+.rocks{
+    width: 98px;
+    height: 98px;
+}
+
+
+/* CHARACTER */
+#char_img{
+    width: 98px;
+    height: 98px;
+}
+#character{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 263px;
+    top: 1px;
+    z-index: 100;
+}
+
+
+/* ENEMIES */
+.enemies{
+    width: 98px;
+    height: 98px;
+}

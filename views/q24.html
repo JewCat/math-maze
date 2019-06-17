@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 110px 0;
+        		height: 180px;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="a24">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>There are coins on the board. We want to have 2 coins in each column and 2 coins in each row. How many coins need to be removed?<br><img src="../images/a1/q24.png"></h1>
+				
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">0
+				<input type="radio" name="txtChoose" value = "b">1
+				<input type="radio" name="txtChoose" value = "c">2
+				<input type="radio" name="txtChoose" value = "d">3
+				<input type="radio" name="txtChoose" value = "e">4
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

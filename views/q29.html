@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="b5">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>Several students want to plant 20 tulips in the school garden. It takes ten minutes for them to plant five tulips. They started at 9:00 in the morning. At what time will they finish planting all 20 tulips?
+				</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">At 9:10
+				<input type="radio" name="txtChoose" value = "b"> At 9:20
+				<input type="radio" name="txtChoose" value = "c">At 9:40 
+				<input type="radio" name="txtChoose" value = "d"> At 9:50
+				<input type="radio" name="txtChoose" value = "e"> At 10:00 
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>

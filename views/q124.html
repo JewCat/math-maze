@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="f22">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>  
+					Ana has one coin of 5 cents, one coin of 10 cents, one coin of 20 cents and one coin of 50 cents. How many diﬀerent values can she make with these coins?
+				</h1>	
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a"> 4
+				<input type="radio" name="txtChoose" value = "b"> 7
+				<input type="radio" name="txtChoose" value = "c"> 10
+				<input type="radio" name="txtChoose" value = "d"> 15
+				<input type="radio" name="txtChoose" value = "e"> 20
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>	
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/question.css">
+        <script type="text/javascript" src="../js/map_controller.js"></script>
+        <style type="text/css">
+        	.content{
+        		padding: 200px 0;
+        		height: 0;
+        	}
+        </style>
+</head>
+<body onload="loadingQuest()">
+	<form method="POST" name="frmQuest">
+		<div class="question" id="a15">
+			<div id="timezone">
+		            <span id="m"></span> :
+		            <span id="s"></span>
+       			</div>
+			<div class="content">
+				<h1>Eve brings 12 candies, Alice 9 candies and Irene doesn’t bring any candy. They put all the candies together on a table and divide them equally among themselves. How many candies does each of the girls get?</h1>
+			</div>
+			<div class="answer">
+				<input type="radio" name="txtChoose" value = "a">3
+				<input type="radio" name="txtChoose" value = "b">7
+				<input type="radio" name="txtChoose" value = "c">8
+				<input type="radio" name="txtChoose" value = "d">9
+				<input type="radio" name="txtChoose" value = "e">12
+			</div>
+			<div class="send" onclick="sendAnswer()">Trả lời</div>
+		</div>
+
+	</form>
+</body>
+</html>
